@@ -39,7 +39,8 @@ def sumatoria(lista):
 def lista_factoriales(lista):
     lista_de_factoriales=[]
     for i in lista:
-        lista_de_factoriales.append(factorial(i))
+        aux = factorial(i)
+        lista_de_factoriales.append(aux)
     return lista_de_factoriales
 
 
