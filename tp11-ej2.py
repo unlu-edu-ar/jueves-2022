@@ -46,6 +46,6 @@ def lista_factoriales(lista):
 
 lista = [3,2,4]
 
-print(lista_de_primos(lista))            
-print(sumatoria(lista))            
+# print(lista_de_primos(lista))            
+# print(sumatoria(lista))            
 print(lista_factoriales(lista))
