@@ -25,15 +25,21 @@ def calcular_webinars(n):
     contador = 0
     promedio = 0
     titulo = ""
-    maximo_inscriptos = 0
+    titulo_m = ""
+    # maximo_inscriptos = 0
 
     for x in range(1,n+1):
         nombre = input("Ingrese el titulo del webinar")
         cantidad = int (input("inscriptos"))
+        if x == 1 :
+            maximo_inscriptos = cantidad
+            minimo_inscriptos = cantidad
         if cantidad > maximo_inscriptos:
             maximo_inscriptos = cantidad
             titulo = nombre
-            
+        if cantidad < minimo_inscriptos:
+            minimo_inscriptos = cantidad
+            titulo_m = titulo
         contador += cantidad
     promedio = contador/n
 
